@@ -1,0 +1,454 @@
+@media (min-width:300px) and (max-width: 500px) {
+    .heading{
+        display:block;
+        
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+    
+    }
+    
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .body{
+        height: auto;
+        padding-top: 30px;
+        font-size: x-large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 300;
+        font-style: normal;
+        display: block;
+        
+    }
+    .body .body-1{
+        padding-top: 20px;
+        padding-left: 30px;
+        color: whitesmoke;
+    }
+    
+    .body .body-1 .icon{
+        text-align: left;
+    }
+    .body .body-1 .icon a {
+        text-decoration: none;
+        text-align: left;
+        margin: 0rem 10px;
+    }
+          
+    .body .body-1 .icon .fab {
+        font-size: 3rem;
+        color: black;
+        margin-top: 1rem;
+    }
+          
+    .body .body-1 .icon .fab:hover {
+        color:#E8B86D;
+        transition:ease-out;
+        transition-duration: .3s;
+    }
+    .body .body-2{
+        padding-top: 5px;
+        width: auto;
+        margin-left: 1rem;
+        margin-top: 0rem;
+        height: auto;
+    }
+    form {
+        width: auto;
+        margin: 2rem;
+        height: auto;
+        padding-top: 3px;
+        font-family: 'Zilla Slab', serif;
+        align-items: start;
+    }
+    form textarea {
+        width: auto;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        align-items: start;
+        
+    }
+    
+    /* Focus effect for input fields */
+    form input:focus,
+    form textarea:focus {
+        border-color:whitesmoke;
+        outline: none;
+        box-shadow: 0 0 8px #697565;
+    }
+    input[type="submit"],
+    [type="reset"]{
+    background-color:#E8B86D;
+    color: black;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    }
+    input[type="submit"],
+    [type="reset"] :hover{
+        width: 100%;
+    }
+    
+    
+}
+@media (min-width:500px) and (max-width: 786px) {
+    
+    .heading{
+        display:block;
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+    
+    }
+    
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+
+.body{
+    height: auto;
+    padding-top: 50px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    font-style: normal;
+    display: block;
+    
+}
+.body .body-1{
+    padding-top: 200px;
+    padding-left: 30px;
+    color: whitesmoke;
+}
+.body p.email{
+    text-align: left;
+        color: black;
+    
+}
+.body p.email :hover{
+    color: black;
+    transition: .3 ease-in-out;
+    font-size: large;
+}
+
+.body .body-1 h3{
+    text-align: left;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.body .body-1 .icon{
+    text-align: left;
+}
+.body .body-1 .icon a {
+    text-decoration: none;
+    text-align: left;
+    margin: 0rem 10px;
+}
+      
+.body .body-1 .icon .fab {
+    font-size: 2rem;
+    color: black;
+    margin-top: 1rem;
+}
+      
+.body .body-1 .icon .fab:hover {
+    color:#E8B86D;
+    transition:ease-out;
+    transition-duration: .3s;
+}
+.body .body-2{
+    padding-top: 10px;
+    width: auto;
+    margin-left: 3rem;
+    margin-top: 0rem;
+    height: auto;
+}
+/* form .name{
+    display: flex;
+    padding-top: 10px;
+} */
+
+/* General form styling */
+form {
+    width: auto;
+    margin: 2rem;
+    height: auto;
+    padding-top: 3px;
+    font-family: 'Zilla Slab', serif;
+    align-items: start;
+}
+
+/* Styling for form labels */
+form label {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: whitesmoke;
+
+}
+
+/* Styling for input fields */
+form input[type="text"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form input[type="email"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form input[type="phone"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: auto;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    
+}
+
+/* Focus effect for input fields */
+form input:focus,
+form textarea:focus {
+    border-color:whitesmoke;
+    outline: none;
+    box-shadow: 0 0 8px #697565;
+}
+
+
+/* Textarea styling */
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+footer{
+    /* margin-top: 2rem; */
+    background-color: whitesmoke;
+    height: 200px;
+    padding-top: 1rem;
+    h3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+    }
+    .footer-icon{
+        text-align: center;
+        a {
+            text-decoration: none;
+            margin: 0rem 10px;
+          }
+      
+          .fab {
+            font-size: 1rem;
+            color: #DE982B;
+            margin-top: 1.5rem;
+          }
+      
+          .fab:hover {
+            color:black;
+          }
+    }
+    .copywrite{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .policies{
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        a{
+            color: #E8B86D;
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+    }
+}
+@media (min-width:768px) and (max-width: 1300px){
+    .heading{
+        display:block;
+        
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+
+    }
+
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .body .body-1{
+        padding-top: 60px;
+        padding-left: 30px;
+        color: whitesmoke;
+    }
+    form textarea {
+        width: auto;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        align-items: start;
+        
+    }
+    
+    /* Focus effect for input fields */
+    form input:focus,
+    form textarea:focus {
+        border-color:whitesmoke;
+        outline: none;
+        box-shadow: 0 0 8px #697565;
+    }
+    input[type="submit"],
+    [type="reset"]{
+    background-color:#E8B86D;
+    color: black;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    }
+    input[type="submit"],
+    [type="reset"] :hover{
+        width: 100%;
+    }
+}

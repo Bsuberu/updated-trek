@@ -1,0 +1,250 @@
+@media (min-width:300px) and (max-width: 500px){
+    .heading{
+        display:block;
+        width: auto;
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+        width: auto;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: small; /* Adjust font size for mobile */
+    }
+    .service{
+        display: flex;
+        height: auto;
+        padding-top: 20px;
+        color: black;
+    }
+    .main{
+        margin-top: 20px;
+        margin-left: 30px;
+        width: auto;
+        align-content: center;
+    }
+    .service-initials{
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: center;
+        padding-top: 50px;
+        font-size: large;
+        color: whitesmoke;
+        
+    }
+    .service-content{
+        padding-left: 5px;
+        p{
+            font-size: 1.05rem;
+            padding-bottom: 10px;}
+    }
+}
+
+@media (min-width:500px) and (max-width: 786px) {
+    
+    .heading{
+        display:block;
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+    
+    }
+    
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+    }
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .service{
+        display: flex;
+        height: auto;
+        padding-top: 20px;
+        color: black;
+    }
+    .main{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 80%;
+        align-content: center;
+    }
+    .service-initials{
+        margin-left: 25px;
+        margin-right: 50px;
+        text-align: center;
+        padding-top: 50px;
+        font-size: x-large;
+        color: whitesmoke;
+        
+    }
+    .service-content{
+        padding-left: 10px;
+        p{
+            font-size: 1.05rem;
+            padding-bottom: 10px;}
+    }
+    footer{
+    /* margin-top: 2rem; */
+    background-color: whitesmoke;
+    height: 200px;
+    padding-top: 1rem;
+    h3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+    }
+    .footer-icon{
+        text-align: center;
+        a {
+            text-decoration: none;
+            margin: 0rem 10px;
+          }
+      
+          .fab{
+            font-size: 1.5rem;
+            color: #DE982B;
+            margin-top: 1rem;
+          }
+      
+          .fab:hover {
+            color:black;
+          }
+    }
+    .copywrite{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+    .policies{
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        a{
+            color: #E8B86D;
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+    }
+}
+@media (min-width:768px) and (max-width: 1300px){
+    .heading{
+        display:block;
+        
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+
+    }
+
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .service{
+        display: flex;
+        height: auto;
+        padding-top: 20px;
+        color: black;
+    }
+    .main{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 80%;
+        align-content: center;
+    }
+    .service-initials{
+        margin-left: 25px;
+        margin-right: 50px;
+        text-align: center;
+        padding-top: 50px;
+        font-size: x-large;
+        color: whitesmoke;
+        
+    }
+    .service-content{
+        padding-left: 10px;
+        p{
+            font-size: 1.05rem;
+            padding-bottom: 10px;}
+    }
+}

@@ -1,0 +1,289 @@
+ /* Hide navigation and show toggle on smaller screens(Mobile devices) */
+ @media (min-width:300px) and (max-width: 499px) {
+    .heading{
+        display:block;
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+    
+    }
+    
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .body{
+        padding-left: 5px;
+        align-items: start;
+        width: auto;
+        justify-content: left;
+        padding-top: 15px;
+    }
+    .body .left{
+        display: none;
+    }
+    .body .right{
+        height:auto;
+        padding-left: 10px;
+        p{
+            /* text-indent: 15px; */
+            line-height: 30px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: medium;
+
+        }
+        h2{
+        font-family: "Dancing Script", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        }
+        h3{
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: left;
+            padding-bottom: 25px;
+            padding-left: 10px;
+            color: #E8B86D;
+        }
+    }
+ }
+
+
+@media (min-width:500px) and (max-width: 768px) {
+    
+.heading{
+    display:block;
+}
+.menu ul {
+    display: none; /* Hide the navigation */
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle {
+    display: flex; /* Show the menu toggle button */
+    color: gold;
+
+}
+
+nav.menu ul.show {
+    display: flex; /* Show the menu when the toggle is clicked */
+}
+
+header {
+    flex-direction: column; /* Stack logo and menu toggle vertically */
+    height: auto; /* Adjust height to fit content */
+    position: relative;
+}
+.heading {
+    width: 100%; /* Full width for the logo */
+    text-align: center;
+}
+nav.menu {
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 0; /* Remove large gaps between menu items */
+    text-align: center;
+}
+nav ul li a {
+    font-size: medium; /* Adjust font size for mobile */
+}
+.body{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 200;
+    font-style: normal;
+    display:flex;
+    }
+.body .left img{
+    padding-top: 80px;
+    width: 200px;
+    height: 500px;
+}
+.body .right{
+    padding-top: 50px;
+    padding-left: 20px;
+    p{
+        text-indent: 15px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    h2{
+    font-family: "Dancing Script", system-ui;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    }
+    h3{
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: left;
+        padding-bottom: 25px;
+        padding-left: 40px;
+        color: #E8B86D;
+    }
+}
+footer{
+    margin-top: 0rem;
+    background-color: whitesmoke;
+    height: 200px;
+    padding-top: 1.5rem;
+    h3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+    }
+    .footer-icon{
+        text-align: center;
+        a {
+            text-decoration: none;
+            margin: 0rem 20px;
+          }
+      
+          .fab {
+            font-size: 1.5rem;
+            color: #DE982B;
+            margin-top: 1.5rem;
+          }
+      
+          .fab:hover {
+            color:black;
+          }
+    }
+    .copywrite{
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .policies{
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+        a{
+            color: #E8B86D;
+            padding: 3px;
+        }
+    }
+}
+}
+@media (min-width:768px) and (max-width: 1300px){
+
+    .heading{
+        width: auto;
+        
+    }
+
+    header {
+        height: 100px; /* Adjust height to fit content */
+        position: relative;
+        width: 100%;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 5px; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: large; /* Adjust font size for mobile */
+    }
+    .body{
+        padding-top: 15px;
+        padding-left: 10px;
+        font-size: larger;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 200;
+        font-style: normal;
+        display:flex;
+        height: 700px;
+        }
+    .body .left img{
+        padding-top: 80px;
+        width: 250px;
+        height: 550px;
+    }
+    .body .right{
+        padding-top: 50px;
+        padding-left: 20px;
+        p{
+            text-indent: 15px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        h2{
+        font-family: "Dancing Script", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        padding-bottom: 5px;
+        padding-left: 50px;
+        }
+        h3{
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: left;
+            padding-bottom: 25px;
+            padding-left: 40px;
+            color: #E8B86D;
+        }
+    }
+    footer{
+        margin-top: 0rem;
+        background-color: whitesmoke;
+        height: 300px;
+        padding-top: 1.5rem;
+    }
+   
+}
+    

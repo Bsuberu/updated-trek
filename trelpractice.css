@@ -1,0 +1,656 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: beige;
+}
+    
+header{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.heading{
+    width: 40%;
+    flex: 0 1 auto;
+}
+.heading img{
+   max-height:60px;
+   /* padding-bottom: 50px;
+   padding-left:50px; */
+}
+
+nav.menu{
+    width: 60%;
+   
+}
+header .menu ul{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+nav ul li{
+    margin-right: 100px;
+    list-style: none;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #DE982B;
+    font-size: larger;
+    font-family: "Zilla Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 2px solid transparent; /* Default transparent border */
+    
+}
+nav a:hover{
+    /* text-decoration: underline; */
+    color:black;
+    font-weight: bolder;
+    font-style: italic;
+    font-size:Xx-large;
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease; /* Smooth expansion of the underline */
+}
+nav a:hover::after {
+    width: 100%; /* Expands underline */
+}
+
+.body{
+    background-image: url(./images/building-7768129_1920.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 800px;
+    padding-top: 350px;
+    padding-left: 50px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-weight: 500;
+    font-style: normal; */
+    
+}
+#head{
+    background-color: #ECDFCC;
+    width: fit-content;
+    white-space: pre-wrap;
+    padding-bottom: 3px;
+    color: black;
+}
+.menubutton button{
+    background-color: #ECDFCC; /* Button color */
+    color: black;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    /* padding: 10px 20px; */
+    margin-right: 50px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+}
+.menubutton button a{
+    color: black;
+    text-decoration: none;
+    font-family: "Zilla Slab", serif;
+}
+.menubutton button:hover {
+    background-color: orange; /* Darker button color on hover */
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+}
+/* Hide menu toggle button on larger screens */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* .headerbutton {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: larger;
+    background-color: #1A5319;
+    color: white;
+    padding-bottom: 20px;
+} */
+
+/* .headerbutton:hover {
+    background-color: #0056b3;
+} */
+.body button{
+    background-color:#E8B86D; /* Button color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+}
+.body button a{
+    color: black;
+    text-decoration: none;
+    font-family: "Zilla Slab", serif;
+}
+.body button:hover {
+    a{
+        color: white;
+    }
+    background-color: #DE982B; /* Darker button color on hover */
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+}
+
+
+.mid{
+    background-color: white;
+    height: 300px;
+}
+.mid-body {
+    padding: 20px;
+    padding-top: 50px;
+    max-width: 800px; /* Constrain the width of the content */
+    margin: 0 auto; /* Center the content */
+    text-align: center;
+    height: 300px;
+    background-color: white;
+    
+}
+
+.mid-body h3 {
+    font-size: 1.5rem; /* Font size for heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #333;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mid-body p {
+    font-size: 1rem; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 1rem; /* Space below paragraphs */
+    color: #666;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mid-body2{
+    background-color: beige;
+
+   
+}
+.mid-body2 h3 {
+    font-size: 1.5rem; /* Font size for heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #333;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 15px;
+    /* background-color: ; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 800px; /* Constrain the width of the content *./
+     margin: 0 auto; Center the content */
+    margin: 0 auto;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px; /* Space between the items */
+    padding: 20px;
+    justify-content: center;
+}
+
+.img1, .img2{
+    /* Light background color for the items */
+    border-radius: 8px; /* Rounded corners */
+    /* padding: 20px; */
+    width: 100%;
+    height: 400px;
+    max-width: 600px; /* Max width for each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.img1 a{
+    text-decoration: none;
+    color: #000;
+}
+.img2 a{
+    text-decoration: none;
+    color: #000;
+}
+.img1 h2{font-size: 2rem; /* Heading size */
+   
+    color: black;
+    background-image: url(./images/pie-2579310_1280.jpg);
+    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+    height: 400px;
+    padding-top: 150px;
+    text-decoration: none;
+
+    font-size: xx-large;
+    font-weight:900;
+    max-width: 600px; /* Max width for each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.img2 h2 {
+    font-size: 2rem; /* Heading size */
+    font-size: xx-large;
+    font-weight: 900;
+    color: black;
+    background-image: url(./images/chart-2579304_1280.jpg);
+    border-radius: 8px; /* Rounded corners */
+    padding-top: 150px;
+    text-decoration: none;
+    width: 100%;
+    height: 400px;
+    max-width: 600px; /* Max width for each item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.img1 h4, .img2 h4 {
+    font-size: 1.25rem; /* Subheading size */
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    color: black;
+    
+}
+
+.img1 p, .img2 p {
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: black;
+
+}
+
+.img1 button, .img2 button {
+    background-color:#E8B86D; /* Button color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+}
+
+.img1 button a, .img2 button a {
+    color: black;
+    text-decoration: none;
+    font-family: "Zilla Slab", serif;
+}
+
+.img1 button:hover, .img2 button:hover {
+    a{
+        color: white;
+    }
+    background-color: #DE982B; /* Darker button color on hover */
+    border-color:2px solid black;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+}
+.mid-body3{
+    display: flex;
+    margin-top: 250px;
+    background-color: whitesmoke;
+    padding-top: 50px;
+}
+.mid-body3 img{
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.mid-body3 .left-side{
+    margin-left: 100px;
+}
+.mid-body3 .left-side h4{
+    font-size: 3rem; /* Heading size */
+    font-size: xx-large;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+.mid-body3 .left-side p{
+    font-size: 2rem; /* Heading size */
+    font-size: large;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    line-height: 2rem;
+}
+.mid-body3 .left-side form {
+    
+    padding-top: 20px;
+    padding: 20px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type="submit"] {
+    color: white;
+    text-decoration: none;
+    font-family: "Zilla Slab", serif;
+    font-size: large;
+    background-color: #E8B86D;
+    color:black;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #DE982B; /* Darker button color on hover */
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+
+}
+    
+    
+
+input::placeholder {
+    color:black;
+}
+.mid-body4{
+   margin-top: px;
+   background-color: white;
+   padding-top: 5rem;
+   text-align: center;
+    height: 400px;
+}
+.mid-body4 h3{
+    font-size: 2rem; /* Font size for heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto; /* Center the content */
+}
+.mid-body4 p{
+    font-size: large; /* Font size for heading */
+    /* margin-bottom: 1rem; /* Space below the heading */
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto; /* Center the content */
+    max-width: 800px;
+    text-align: center;
+  
+}
+hr {
+    width: 70%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the hr and add some margin */
+    border: 1px solid #ccc; /* Customize border style */
+}
+.mid-body4 h5{
+    font-size: 2rem; /* Font size for heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    /* margin-top: 25rem; */
+    padding-top: 30px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto; /* Center the content */
+}
+.mid-body5{
+    height: 520px;
+    display: flex;
+    background-color: #E8B86D;
+    background-image: url(./images/church-1993645_1920.jpg);
+}
+.mid-body5-1{
+    height: 400px;
+    display: flex;
+    width: 90%;
+    background-color: white;
+    border-radius: 2px solid black;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    /* margin-left: 4rem;
+    margin-bottom: 4rem; */
+}
+.mid-body5-1 h3{
+    text-align: center;
+    padding-top: 3rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    font-style: normal;
+
+}
+.mid-body5-1 p{
+    text-align: center;
+    padding-top: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    font-style: normal;
+
+}
+.mid-body5-1 button{
+    align-self: center;
+    margin-left: 600px;
+    margin-top: 2rem;
+    padding: 0.6rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    font-style: normal;
+    background-color: #E8B86D;
+    border-radius: 5px;
+    border-color: #D6EFD8;
+}
+.mid-body5-1 button a{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+.mid-body5-1 button:hover {
+    a{
+        color: goldenrod;
+    }
+    background-color: beige; /* Darker button color on hover */
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+}
+footer{
+    margin-top: 0rem;
+    background-color: whitesmoke;
+    height: 250px;
+    padding-top: 2rem;
+    h3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+    .footer-icon{
+        text-align: center;
+        a {
+            text-decoration: none;
+            margin: 0 20px;
+          }
+      
+          .fab {
+            font-size: 2rem;
+            color: #DE982B;
+            /* margin-top: 1rem; */
+          }
+      
+          .fab:hover {
+            color:black;
+          }
+    }
+    .copywrite{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .policies{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        a{
+            color: #E8B86D;
+            padding: 10px;
+        }
+    }
+
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        padding-left: 20px;
+        font-size: large;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+
+    .img1, .img2 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .mid-body3 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mid-body5 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        padding-top: 250px;
+        font-size: medium;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .img1 h2, .img2 h2 {
+        font-size: large;
+        padding-top: 100px;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .mid-body {
+        padding: 10px;
+    }
+
+    .footer-icon .fab {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="submit"] {
+        width: 100%;
+    }
+}

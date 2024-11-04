@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREK PRACTICE</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Whisper&family=Zilla+Slab:ital,wght@0,300;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .error {
+            color: red;
+        }
+        /* Modal container */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+        }
+
+        /* Modal content box */
+        .modal-content {
+            background-color: #E8B86D;
+            margin: 15% auto; /* Center it */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* Could be more or less, depending on screen size */
+            max-width: 400px; /* Set a max width for larger screens */
+            text-align: center;
+        }
+
+        /* Close button style */
+        .close {
+            color: black;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <a href="#">
+                <img src="./images/logo.jpg" alt="logo here">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#free-resources">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="body">
+            <div class="body-1">
+                <h3>Contact Us.</h3>
+                <p>Get in touch by completing the contact form or you may contact us at</p>
+                <p class="email">Email: born2bemighty@yahoo.com</p>
+                <p>Phone No: (513)-500-3750</p>
+                <p>We aim to respond within 48 hours</p>
+                <div class="icon">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="body-2">
+                <form method="POST" id="myForm" action="trekcontact.php">
+                    <h4 style="color: whitesmoke; text-align: center; padding-top: 20px;">Please Fill Out the Form below</h4><br>
+                    <div>
+                        <label for="firstname">First Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <div id="msg_fn" class="error"></div><!-- Error message for first name -->
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label><br>
+                        <input type="text" id="sname" name="sname" placeholder="Last Name" required>
+                        <div id="msg_sn" class="error"></div> <!-- Error message for last name -->
+                    </div>
+                    <div>
+                        <label for="contact">Phone No (required)</label><br>
+                        <input type="phone" id="number" name="number" placeholder="Please enter your contact number" required>
+                        <div id="number-error" class="error"></div>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+                        <div id="email-error" class="error"></div>
+                    </div>
+                    <div>
+                        <label for="help">Questions</label><br>
+                        <textarea cols="30" rows="3" name="text" placeholder="Type your Question here"></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="submit" class="button-gradient" id="submit" name="submit" value="Submit">
+                        <input type="reset" id="reset" name="reset" value="Clear fields" onclick="clearForm()">
+                    </div>
+                </form>
+
+                <!-- Modal HTML -->
+                <div id="confirmationModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Thank you for contacting us!</p><br>
+                        <p>We'll be in touch shortly!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Let's Connect</h3>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copywrite">
+            <p>&copy; <span id="year"></span> TREK CONSULTING.</p>
+        </div>
+        <div class="policies">
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        function clearForm() {
+            document.getElementById("fname").value = "";
+            document.getElementById("sname").value = "";
+            document.getElementById("number").value = "";
+            document.getElementById("email").value = "";
+            document.querySelector("textarea").value = "";
+            document.getElementById("msg_fn").innerHTML = "";
+            document.getElementById("msg_sn").innerHTML = "";
+            document.getElementById("email-error").innerHTML = "";
+            document.getElementById("number-error").innerHTML = "";
+        }
+
+        function validateForm() {
+            let fname = document.getElementById("fname").value;
+            let sname = document.getElementById("sname").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("number").value;
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let numberPattern = /^\+?(\d{1,3})?[-.\s]?(\(?\d{3}\)?)?[-.\s]?\d{3}[-.\s]?\d{4}$/;
+
+            let isValid = true;
+
+            // Clear previous errors
+            document.getElementById("msg_fn").innerHTML = "";
+            document.getElementById("msg_sn").innerHTML = "";
+            document.getElementById("email-error").innerHTML = "";
+            document.getElementById("number-error").innerHTML = "";
+
+            if (fname === "") {
+                document.getElementById("msg_fn").innerText = "First name is required.";
+                isValid = false;
+            }
+
+            if (sname === "") {
+                document.getElementById("msg_sn").innerText = "Last name is required.";
+                isValid = false;
+            }
+
+            if (email === "" || !emailPattern.test(email)) {
+                document.getElementById("email-error").innerText = "Please enter a valid email address.";
+                isValid = false;
+            }
+
+            if (phone === "" || !numberPattern.test(phone)) {
+                document.getElementById("number-error").innerText = "Please enter a valid contact number.";
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Show modal function
+        function showModal() {
+            let modal = document.getElementById("confirmationModal");
+            modal.style.display = "block"; // Show the modal
+
+            // Close the modal when the close button is clicked
+            let closeBtn = document.getElementsByClassName("close")[0];
+            closeBtn.onclick = function () {
+                modal.style.display = "none"; // Hide modal on close
+            }
+
+            // Close the modal when clicking outside the modal content
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none"; // Hide modal on outside click
+                }
+            }
+        }
+
+        // Listen for the form submission
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            if (validateForm()) {
+                showModal(); // Show modal if the form is valid
+            }
+        });
+    </script>
+</body>
+</html>

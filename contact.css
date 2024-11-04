@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(./images/evening-atmosphere-4315445_1920.jpg);
+    background-size: cover;
+    
+    /* background-color: #ECDFCC; */
+    
+}
+header{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 10px 20px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.heading{
+    width: 40%;
+    flex: 0 1 auto;
+}
+.heading img{
+   max-height:60px;
+   /* padding-bottom: 50px;
+   padding-left:50px; */
+}
+/* .heading img{
+} */
+nav.menu{
+    width: 60%;
+   
+}
+header .menu ul{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+}
+nav ul li{
+    margin-right: 100px;
+    list-style: none;
+   
+}
+nav a{
+    text-decoration: none;
+    color: #DE982B;
+    font-size: larger;
+    font-family: "Zilla Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 2px solid transparent; /* Default transparent border */
+    
+}
+nav a:hover{
+    /* text-decoration: underline; */
+    color:black;
+    font-weight: bolder;
+    font-style: italic;
+    font-size:Xx-large;
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s ease; /* Smooth expansion of the underline */
+}
+nav a:hover::after {
+    width: 100%; /* Expands underline */
+}
+
+.body{
+    height: auto;
+    padding-top: 50px;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    
+}
+.body .body-1{
+    padding-top: 250px;
+    padding-left: 50px;
+    color: whitesmoke;
+}
+.body p.email{
+    text-align: left;
+        color: black;
+    
+}
+.body p.email :hover{
+    color: black;
+    transition: .3 ease-in-out;
+    font-size: x-large;
+}
+
+.body .body-1 h3{
+    text-align: left;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.body .body-1 .icon{
+    text-align: left;
+}
+.body .body-1 .icon a {
+    text-decoration: none;
+    text-align: left;
+    margin: 0rem 20px;
+}
+      
+.body .body-1 .icon .fab {
+    font-size: 2rem;
+    color: black;
+    margin-top: 1rem;
+}
+      
+.body .body-1 .icon .fab:hover {
+    color:#E8B86D;
+    transition:ease-out;
+    transition-duration: .3s;
+}
+.body .body-2{
+    width: 60%;
+    margin-left: 5rem;
+    margin-top: 0rem;
+    height: auto;
+}
+/* form .name{
+    display: flex;
+    padding-top: 10px;
+} */
+
+/* General form styling */
+form {
+    width: auto;
+    margin: 5rem;
+    height: auto;
+    padding-top: 20px;
+    font-family: 'Zilla Slab', serif;
+}
+
+/* Styling for form labels */
+form label {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: whitesmoke;
+
+}
+
+/* Styling for input fields */
+form input[type="text"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form input[type="email"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+form input[type="phone"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    
+}
+
+/* Focus effect for input fields */
+form input:focus,
+form textarea:focus {
+    border-color:whitesmoke;
+    outline: none;
+    box-shadow: 0 0 8px #697565;
+}
+
+
+/* Textarea styling */
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="submit"],
+[type="reset"]{
+    background-color:#E8B86D;
+    color: black;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 60%;
+}
+
+input[type="reset"]:hover {
+    background-color:#DE982B;
+    color: black;
+    margin-top: 15px;
+    font-style: italic;
+    padding: 12px 20px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 60%;
+}
+input[type="submit"]:hover{
+    background-color:#DE982B;
+    color: black;
+    font-style: italic;
+    margin-top: 15px;
+    font-style: italic;
+    padding: 12px 20px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 60%;
+}
+
+footer{
+    /* margin-top: 2rem; */
+    background-color: whitesmoke;
+    height: 250px;
+    padding-top: 2rem;
+    h3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+    }
+    .footer-icon{
+        text-align: center;
+        a {
+            text-decoration: none;
+            margin: 0rem 20px;
+          }
+      
+          .fab {
+            font-size: 2rem;
+            color: #DE982B;
+            margin-top: 1rem;
+          }
+      
+          .fab:hover {
+            color:black;
+          }
+    }
+    .copywrite{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .policies{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        a{
+            color: #E8B86D;
+            padding: 10px;
+        }
+    }
+
+}
+
+.error {
+    color: red;
+}
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Modal content box */
+.modal-content {
+    background-color: #E8B86D;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+}
+/* Close button style */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover, .close:focus {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}  
+

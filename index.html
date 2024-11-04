@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREK PRACTICE</title>
+    <link rel="stylesheet" href="trelpractice.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Whisper&family=Zilla+Slab:ital,wght@0,300;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.error {
+  color: red;
+}
+ /* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+  
+/* Modal content box */
+.modal-content {
+  background-color: #E8B86D;
+  margin: 15% auto; /* Center it */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  max-width: 400px; /* Set a max width for larger screens */
+  text-align: center;
+}
+
+/* Close button style */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+</style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="#">
+                <img src="./images/logo.jpg" alt="logo here">
+            </a>
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- <div class="menubutton">
+            <button><a href="#">Get a quote</a></button>
+        </div> -->
+        
+    </header>
+    <div class="body">
+        <h2 id="head">Accounting, Tax & Advisory support</h2>
+        <br>
+        <h2 id="head">for individuals</h2>
+        <br>
+        <h2 id="head">small businesses and</h2><br>
+        <h2 id="head">non-profit Organizations</h2><br>
+
+        <button><a href="contact.html">LET'S TALK</a></button>
+    </div>
+    <div class="mid" id="free-resources">
+        <div class="mid-body">
+            <h3>“Accounting is the language of business” - Warren Buffett</h3>
+            <br>
+            <p>Welcome to Trek Accounting. I am a CPA with over 10 years of experience spanning across various industries. I provide accounting, tax and advisory services for individuals, small businesses and non-profit organizations.</p>
+        </div>
+    </div>
+    <div class="mid-body2" >
+        <h3>Ready to take control of your business finances and take the stress out of tax time</h3>
+        <div class="imgs">
+            <div class="img1">
+                <a href="./services.html">
+                <h2 style="color: black;">Individuals</h2>
+                </a>
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut ducimus perferendis, similique minus esse atque, autem, animi eos voluptatum beatae cum. Voluptatibus ratione odio autem provident architecto ducimus at.</p>
+                <button><a href="#">Learn More</a></button>
+            </div>
+            <div class="img2">
+                <a href="./services.html">
+                <h2 style="color: black;">Small Businesses and Non-Profits</h2>
+                </a>
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ut ducimus perferendis, similique minus esse atque, autem, animi eos voluptatum beatae cum. Voluptatibus ratione odio autem provident architecto ducimus at.</p>
+                <button><a href="#">Learn More</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="mid-body3">
+        <div>
+            <img src="./images/android-1296249_640.png" width="500px" height="400px">
+        </div>
+        <div class="left-side">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio similique est sunt sapiente animi iusto, exercitationem error eum cupiditate dolorem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt magnam architecto nulla facere natus! Repellat cumque quos maxime assumenda cupiditate!</p>
+            
+            <form method="post" action="" id="myForm">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <div id="msg_name" class="error"></div>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <span id="email-error" class="error"></span>
+                <input type="submit" id="submit" name="submit" value="Get The Guide" on>
+                <p id="error-msg" class="error"></p>
+                
+            </form>
+            
+             <!-- Modal HTML -->
+            <div id="confirmationModal" class="modal">
+               <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Thank you for contacting us!</p><br>
+                    <p>We'll be in touch shortly!!</p>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="mid-body4">
+        <h3>WHAT CLIENTS ARE SAYING</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nostrum distinctio deserunt nisi iusto odit quisquam illo temporibus adipisci maiores delectus, dolorum dicta quidem ea esse vitae mollitia minus laboriosam accusantium doloremque, officia molestiae porro? Quod, eaque. Laboriosam, delectus itaque.</p>
+        <h5>Review Author</h5>
+    </div> -->
+    <div class="mid-body5">
+        <div class="mid-body5-1">     
+            <div class="right">
+               <h3>Hi, I'm Rachael,</h3> 
+               <p>A CPA and fellow entrepreneur passionate about helping you and your business succeed.</p>
+               <p>If you've ever felt overwhelmed and stressed out about your finances, and want to start getting your business finances organized so you can grow your business then you're in the right place!</p>
+               
+               <button><a href="about.html">Get to Know Me</a></button>
+            </div>
+        </div>
+        <!-- <div class="mid-body5-2">
+            <div class="left">
+                <img src="RAQUEL.jpg" width="300px" height="500px">
+            </div>
+            <div class="right">
+               <h3>Hi, I'm Rachael,</h3> 
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, laborum ab. Beatae, ut dolore debitis praesentium a omnis suscipit dolor, ducimus aperiam culpa expedita tempore iusto aut mollitia pariatur cum?</p>
+               <button><a href="#">Get to Know Me</a></button>
+            </div>
+        </div> -->
+    </div>
+    <footer>
+        <h3>Lets Connect</h3>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copywrite">
+            <p>&copy; <span id="year"></span> TREK CONSULTING.</p>
+        </div>
+        <div class="policies">
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+        </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>

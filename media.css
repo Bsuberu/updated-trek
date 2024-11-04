@@ -1,0 +1,330 @@
+/* Hide navigation and show toggle on smaller screens(Mobile devices) */
+@media (min-width:300px) and (max-width: 500px) {
+    .heading{
+        display:block;
+        
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+    
+    }
+    
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .body{
+        padding-left: 0px;
+        font-size: large;
+        height: 700px;
+    }
+    .mid{
+        height: 380px;
+    }
+    .mid-body, .mid-body2, .mid-body3 {
+        padding: 10px; /* Reduce padding for mobile */
+        text-align: center; /* Center-align content for a cleaner look */
+    }
+    .mid-body2 {
+        height: 1450px;
+        padding-bottom: 10px;
+    }
+    
+    .mid-body3 {
+        flex-direction: column; /* Stack content vertically */
+        padding-left: 10px;
+        margin-left: 0;
+    }
+    
+    .mid-body3 img {
+        margin-left: 0;
+        margin-top:4px;
+        width: 100%;
+        height: auto; /* Scale images */
+    }
+    .mid-body3 .left-side form {
+/*     
+        padding-top: 10px;
+        padding: 20px; */
+        width: auto;
+
+    }
+    
+    .mid-body3 .left-side{
+        margin-left: 20px;
+        text-align: justify;
+        p{
+            font-size: medium;
+        }
+    }
+    
+    .mid-body4{
+    height: 500px;
+    }
+    .mid-body5 {
+        flex-direction: column;
+        padding: 10px;
+        height: 1000px;
+    }
+
+    .mid-body5-1 {
+        margin: 0 auto; /* Center the content */
+        padding: 20px;
+        height: 950px;
+    }
+    
+    .mid-body5-1 button {
+        margin-left: 0;
+        width: 100%;
+    }
+    .imgs {
+        flex-direction: column; /* Stack images */
+    }
+
+    .img1, .img2 {
+        width: 100%; /* Full width for each image */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+}
+
+
+
+@media (min-width:500px) and (max-width: 768px) {
+    
+    .heading{
+        display:block;
+        
+    }
+    .menu ul {
+        display: none; /* Hide the navigation */
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu-toggle {
+        display: flex; /* Show the menu toggle button */
+        color: gold;
+    
+    }
+    
+    nav.menu ul.show {
+        display: flex; /* Show the menu when the toggle is clicked */
+    }
+    
+    header {
+        flex-direction: column; /* Stack logo and menu toggle vertically */
+        height: auto; /* Adjust height to fit content */
+        position: relative;
+    }
+
+    .heading {
+        width: 100%; /* Full width for the logo */
+        text-align: center;
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove large gaps between menu items */
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: medium; /* Adjust font size for mobile */
+    }
+    .body{
+        padding-left: 0px;
+        font-size: large;
+        height: 700px;
+    }
+    .mid{
+        height: 250px;
+    }
+    .mid-body, .mid-body2, .mid-body3 {
+        padding: 10px; /* Reduce padding for mobile */
+        text-align: center; /* Center-align content for a cleaner look */
+    }
+    .mid-body2 {
+        height: 1200px;
+        padding-bottom: 10px;
+    }
+    
+    .mid-body3 {
+        flex-direction: column; /* Stack content vertically */
+        padding-left: 10px;
+        margin-left: 0;
+    }
+    
+    .mid-body3 img {
+        margin-left: 0;
+        margin-top:4px;
+        width: 100%;
+        height: 400px; /* Scale images */
+    }
+    .mid-body3 .left-side form {
+/*     
+        padding-top: 10px;
+        padding: 20px; */
+        width: auto;
+
+    }
+    
+    .mid-body3 .left-side{
+        margin-left: 30px;
+        text-align: justify;
+
+    }
+    
+    .mid-body4{
+    height: 500px;
+    }
+    .mid-body5 {
+        flex-direction: column;
+        padding: 10px;
+        height: 800px;
+    }
+
+    .mid-body5-1 {
+        margin: 0 auto; /* Center the content */
+        padding: 20px;
+        height: 750px;
+    }
+    
+    .mid-body5-1 button {
+        margin-left: 0;
+        width: 100%;
+    }
+    .imgs {
+        flex-direction: column; /* Stack images */
+    }
+
+    .img1, .img2 {
+        width: 100%; /* Full width for each image */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+}
+@media (max-width: 768px) {
+    .menubutton button, .mid-body button, .img1 button, .img2 button {
+        font-size: small; /* Adjust button size for mobile */
+        padding: 8px 16px;
+        width: 100%; /* Full-width buttons for mobile */
+    }
+
+    .mid-body h3, .mid-body2 h3, .mid-body5-1 h3 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .heading {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav.menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+
+    .body {
+        padding-top: 300px; /* Adjust padding to accommodate smaller header */
+        height: 800px;
+    }
+    .mid-body2 .imgs {
+        height: 1200px;
+        padding-bottom:20px;
+        font-size: large;
+    
+    }
+    .mid-body3 {
+        flex-direction: column; /* Stack content vertically */
+        padding-left: 10px;
+        margin-left: 0;
+    }
+    
+    .mid-body3 img {
+        margin-left: 0;
+        margin-top:3px;
+        width: 100%;
+        height: auto; /* Scale images */
+    }
+    .mid-body3 .left-side form {
+/*     
+        padding-top: 10px;
+        padding: 20px; */
+        width: auto;
+
+    }
+    
+    .mid-body3 .left-side{
+        margin-left: 30px;
+        text-align: justify;
+        p{
+            font-size: large;
+        }
+    }
+    .mid-body5 {
+        flex-direction: column;
+        padding: 10px;
+        height: 650px;
+    }
+
+    .mid-body5-1 {
+        margin: 0 auto; /* Center the content */
+        padding: 20px;
+        height: 600px;
+    }
+    
+    .mid-body5-1 button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Form with Popup</title>
+  <!-- <style>
+    .modal { /* Modal styles as above */ }
+    .modal-content { /* Modal content styles as above */ }
+    .close-btn { /* Close button styles as above */ }
+  </style> -->
+</head>
+<body>
+
+  <!-- The Form -->
+  <form id="myForm">
+    <input type="text" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- The Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <p>Form submitted successfully!</p>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Handle the form submission using AJAX
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent normal form submission
+
+      var formData = new FormData(this);
+
+      // Send the form data to a PHP file or endpoint
+      fetch('process.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(result => {
+        // Show success modal when response is received
+        document.getElementById("successModal").style.display = "flex";
+      })
+      .catch(error => console.log('Error:', error));
+    });
+
+    function closePopup() {
+      // Close the modal
+      document.getElementById("successModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

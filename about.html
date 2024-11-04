@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREK PRACTICE</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="aboutmedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Whisper&family=Zilla+Slab:ital,wght@0,300;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="#">
+                <img src="./images/logo.jpg" alt="logo here">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body">
+        <div class="left">
+            <img  src="./images/woman-7175038.jpg">
+        </div>
+        <div class="right">
+            <h2>Welcome</h2>
+            <h3>I'M RACHAEL</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, reiciendis impedit id non natus possimus totam quas eum et dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus, expedita incidunt, amet et doloremque molestiae dolore consectetur illum laborum iure nemo facilis exercitationem architecto sunt ab, sed officia dignissimos quos quasi consequuntur provident harum excepturi? Omnis praesentium, dicta alias magni ea modi? Quis, nostrum veritatis id nesciunt magnam expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, blanditiis enim cupiditate eligendi iure possimus recusandae veritatis itaque modi iusto, omnis dolore magnam optio aspernatur. Tenetur at aspernatur molestiae consectetur fugiat incidunt voluptate aut labore dolorum omnis. Iure omnis harum similique veritatis recusandae vitae eaque, aperiam, consequuntur quibusdam incidunt inventore?</p>
+        </div>
+    </div>
+    <footer>
+        <h3>Lets Connect</h3>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copywrite">
+            <p>&copy; <span id="year"></span> TREK CONSULTING.</p>
+        </div>
+        <div class="policies">
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+        var navMenu = document.querySelector('nav.menu');
+        navMenu.classList.toggle('active');
+        });
+      </script>
+</body>
+</html>
